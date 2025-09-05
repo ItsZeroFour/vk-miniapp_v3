@@ -111,7 +111,7 @@ const Main = React.memo(
                 accessToken={accessToken}
               />
               <div className={style.trailer__container}>
-                <Trailer src="https://vkvideo.ru/video_ext.php?oid=-217350474&id=456243968&hd=2&autoplay=1" />
+                <Trailer src="https://vkvideo.ru/video_ext.php?oid=-23900316&id=456245134&hd=3&autoplay=1" />
               </div>
             </motion.div>
           );

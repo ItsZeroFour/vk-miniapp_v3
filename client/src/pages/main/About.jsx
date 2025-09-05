@@ -21,7 +21,7 @@ const About = React.memo(() => {
         <h3>«Август» в кино с 25 сентября</h3>
 
         <div className={style.about__video}>
-          <Video src="https://vkvideo.ru/video_ext.php?oid=-217350474&id=456243968&hd=2&autoplay=1" />
+          <Video src="https://vkvideo.ru/video_ext.php?oid=-23900316&id=456245134&hd=3&autoplay=1" />
         </div>
 
         <Link className={style.about__tickets} to="/">
