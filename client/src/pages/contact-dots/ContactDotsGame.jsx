@@ -4,6 +4,7 @@ import React, {
   useState,
   useMemo,
   useCallback,
+  useEffect,
 } from "react";
 import style from "./ContactDotsGame.module.scss";
 import { gsap } from "gsap";
@@ -63,6 +64,32 @@ const ContactDotsGame = React.memo(() => {
   );
 
   const N = bgPoints.length;
+
+  console.log(current);
+
+  useEffect(() => {
+    if (current.id === 1) {
+      if (window.ym) {
+        window.ym(103806674, "reachGoal", "game2_step1");
+      }
+    } else if (current.id === 2) {
+      if (window.ym) {
+        window.ym(103806674, "reachGoal", "game2_step2");
+      }
+    } else if (current.id === 3) {
+      if (window.ym) {
+        window.ym(103806674, "reachGoal", "game2_step3");
+      }
+    } else if (current.id === 4) {
+      if (window.ym) {
+        window.ym(103806674, "reachGoal", "game2_step4");
+      }
+    } else {
+      if (window.ym) {
+        window.ym(103806674, "reachGoal", "game2_step5");
+      }
+    }
+  }, [current]);
 
   const [locks, setLocks] = useState(() => Array(N).fill(-1));
   const [contactPoints, setContactPoints] = useState(() =>
@@ -179,8 +206,6 @@ const ContactDotsGame = React.memo(() => {
   }, [setContactPoints]);
 
   function initPointsForObject(obj) {
-    console.log(obj);
-
     let freeCount = 1;
     if (obj.id === 2) freeCount = 3;
     if (obj.id === 3) freeCount = 4;
@@ -470,8 +495,6 @@ const ContactDotsGame = React.memo(() => {
       reclampAllPoints();
     });
   }, [reclampAllPoints, waitForCTMStableAnd]);
-
-  console.log(completed, current);
 
   return (
     <section className={style.game}>
