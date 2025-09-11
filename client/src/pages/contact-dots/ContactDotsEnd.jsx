@@ -16,7 +16,7 @@ const ContactDotsEnd = React.memo(({ finalUserId }) => {
       return navigate("/");
     } else {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game2_success");
+        window.ym(103806192, "reachGoal", "game2_success");
       }
     }
   }, [isCompleted, navigate]);
@@ -59,7 +59,7 @@ const ContactDotsEnd = React.memo(({ finalUserId }) => {
                 to="/contact-dots"
                 onClick={async () => {
                   if (window.ym) {
-                    await window.ym(103806674, "reachGoal", "game2_replay");
+                    await window.ym(103806192, "reachGoal", "game2_replay");
                   }
 
                   localStorage.removeItem("progress");

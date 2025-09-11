@@ -18,7 +18,7 @@ const FriendOrFoeEnd = React.memo(({ finalUserId }) => {
       return navigate("/");
     } else {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game3_success");
+        window.ym(103806192, "reachGoal", "game3_success");
       }
     }
   }, [isEnd, navigate]);
@@ -73,7 +73,7 @@ const FriendOrFoeEnd = React.memo(({ finalUserId }) => {
                 to="/friend-or-foe/start"
                 onClick={async () => {
                   if (window.ym) {
-                    await window.ym(103806674, "reachGoal", "game3_replay");
+                    await window.ym(103806192, "reachGoal", "game3_replay");
                   }
                 }}
               >

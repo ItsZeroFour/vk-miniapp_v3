@@ -52,7 +52,7 @@ const FriendOrFoe = React.memo(() => {
               to="/friend-or-foe/start"
               onClick={async () => {
                 if (window.ym) {
-                  await window.ym(103806674, "reachGoal", "game3_start");
+                  await window.ym(103806192, "reachGoal", "game3_start");
                 }
               }}
             >

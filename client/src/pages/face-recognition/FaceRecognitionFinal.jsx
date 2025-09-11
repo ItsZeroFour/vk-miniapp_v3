@@ -43,11 +43,11 @@ const FaceRecognitionFinal = React.memo(({ finalUserId }) => {
   useEffect(() => {
     if (isWon) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game1_success");
+        window.ym(103806192, "reachGoal", "game1_success");
       }
     } else {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game1_fail");
+        window.ym(103806192, "reachGoal", "game1_fail");
       }
     }
   }, []);
@@ -115,7 +115,7 @@ const FaceRecognitionFinal = React.memo(({ finalUserId }) => {
                 to="/face-recognition"
                 onClick={async () => {
                   if (window.ym) {
-                    await window.ym(103806674, "reachGoal", "game1_replay");
+                    await window.ym(103806192, "reachGoal", "game1_replay");
                   }
                 }}
               >
