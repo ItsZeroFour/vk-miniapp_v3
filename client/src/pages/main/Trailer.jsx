@@ -20,9 +20,13 @@ const TrailerBottom = React.memo(({ src }) => {
         />
       </div>
 
-      {/* <Link className={style.trailer__tickets} to="/">
+      <Link
+        className={style.trailer__tickets}
+        to="https://www.kinopoisk.ru/film/1234808"
+        target="_blank"
+      >
         КУПИТЬ БИЛЕТЫ
-      </Link> */}
+      </Link>
 
       <div className={style.trailer__socials}>
         <p>Следите за нами</p>
