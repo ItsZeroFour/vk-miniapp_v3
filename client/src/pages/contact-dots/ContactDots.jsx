@@ -47,7 +47,7 @@ const ContactDots = React.memo(() => {
                 to="/contact-dots/game"
                 onClick={async () => {
                   if (window.ym) {
-                    await window.ym(103806674, "reachGoal", "game2_start");
+                    await window.ym(103806192, "reachGoal", "game2_start");
                   }
                 }}
               >

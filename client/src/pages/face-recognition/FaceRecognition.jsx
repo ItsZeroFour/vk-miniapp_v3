@@ -36,9 +36,9 @@ const FaceRecognition = React.memo(() => {
     );
   }, []);
 
-  const random12 = useMemo(async () => {
+  const random12 = useMemo(() => {
     if (window.ym) {
-      await window.ym(103806674, "reachGoal", "game1_slideshow");
+      window.ym(103806192, "reachGoal", "game1_slideshow");
     }
 
     return shuffleArray(allImages).slice(0, 12);
@@ -53,7 +53,7 @@ const FaceRecognition = React.memo(() => {
       setShowImage(false);
 
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game1_portrait");
+        window.ym(103806192, "reachGoal", "game1_portrait");
       }
       return;
     }
@@ -242,7 +242,7 @@ const FaceRecognition = React.memo(() => {
 
                       if (window.ym) {
                         await window.ym(
-                          103806674,
+                          103806192,
                           "reachGoal",
                           "game1_portrait_check"
                         );

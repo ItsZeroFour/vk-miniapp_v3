@@ -113,7 +113,7 @@ const FaceRecognitionHome = React.memo(() => {
               to="/face-recognition/game"
               onClick={async () => {
                 if (window.ym) {
-                  await window.ym(103806674, "reachGoal", "game1_start");
+                  await window.ym(103806192, "reachGoal", "game1_start");
                 }
               }}
             >

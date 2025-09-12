@@ -70,23 +70,23 @@ const ContactDotsGame = React.memo(() => {
   useEffect(() => {
     if (current.id === 1) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game2_step1");
+        window.ym(103806192, "reachGoal", "game2_step1");
       }
     } else if (current.id === 2) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game2_step2");
+        window.ym(103806192, "reachGoal", "game2_step2");
       }
     } else if (current.id === 3) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game2_step3");
+        window.ym(103806192, "reachGoal", "game2_step3");
       }
     } else if (current.id === 4) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game2_step4");
+        window.ym(103806192, "reachGoal", "game2_step4");
       }
     } else {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game2_step5");
+        window.ym(103806192, "reachGoal", "game2_step5");
       }
     }
   }, [current]);

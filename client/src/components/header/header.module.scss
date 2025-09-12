@@ -37,6 +37,11 @@
 
   .header__nav {
     // margin-left: 80px;
+    margin-right: 95px;
+
+    @media (max-width: 1120px) {
+      margin-right: 80px;
+    }
 
     ul {
       display: flex;

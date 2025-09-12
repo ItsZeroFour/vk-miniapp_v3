@@ -29,27 +29,27 @@ const FriendOrFoeGame = React.memo(() => {
   useEffect(() => {
     if (currentIndex === 0) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game3_step1");
+        window.ym(103806192, "reachGoal", "game3_step1");
       }
     } else if (currentIndex === 1) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game3_step2");
+        window.ym(103806192, "reachGoal", "game3_step2");
       }
     } else if (currentIndex === 2) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game3_step3");
+        window.ym(103806192, "reachGoal", "game3_step3");
       }
     } else if (currentIndex === 3) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game3_step4");
+        window.ym(103806192, "reachGoal", "game3_step4");
       }
     } else if (currentIndex === 4) {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game3_step5");
+        window.ym(103806192, "reachGoal", "game3_step5");
       }
     } else {
       if (window.ym) {
-        window.ym(103806674, "reachGoal", "game3_step6");
+        window.ym(103806192, "reachGoal", "game3_step6");
       }
     }
   }, [currentIndex]);
