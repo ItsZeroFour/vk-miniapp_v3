@@ -65,8 +65,6 @@ const ContactDotsGame = React.memo(() => {
 
   const N = bgPoints.length;
 
-  console.log(current);
-
   useEffect(() => {
     if (current.id === 1) {
       if (window.ym) {
