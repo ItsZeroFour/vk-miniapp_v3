@@ -15,7 +15,7 @@ const TrailerBottom = React.memo(({ src }) => {
         <Video
           src={
             src ||
-            "https://vkvideo.ru/video_ext.php?oid=-23900316&id=456245134&hd=3&autoplay=1"
+            "https://vkvideo.ru/video_ext.php?oid=-217350474&id=456243968&hd=2&autoplay=1"
           }
         />
       </div>
